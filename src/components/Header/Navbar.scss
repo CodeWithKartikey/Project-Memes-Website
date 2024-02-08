@@ -1,0 +1,177 @@
+// Navbar Page styles.
+.navbar {
+    z-index: 99;
+    width: 100%;
+    height: 9rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+
+    &-logo {
+        .brand-name {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            h2 {
+              color: #ff4500;
+              font-weight: 700;
+              font-size: 2.8rem;
+              letter-spacing: 0.1rem;
+              text-transform: uppercase;
+            }
+
+            h4 {
+              color: #141414;
+              font-weight: 500;
+              font-size: 1.5rem;
+              letter-spacing: normal;
+              text-transform: uppercase;
+              margin-top: -1rem;
+            }
+        }
+    }
+
+    &-mobile {
+        gap: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        position: relative;
+
+        h4 {
+          font-size: 2rem;
+          font-weight: 500;
+          color: #141414;
+          letter-spacing: 0.1rem;
+          text-transform: uppercase;
+        }
+
+        .svg-container {
+            width: 3.5rem;
+            height: 3.5rem;
+            border: 4px solid #ff4500;
+            border-radius: none;
+            padding: 0.5rem;
+
+            svg {
+              width: 100%;
+              height: 100%;
+              cursor: pointer;
+              color: #141414;
+            }
+        }
+    }
+
+    &-mobile-menu {
+          z-index: 98;
+          right: 0;
+          top: 9rem;
+          width: 36rem;
+          height: calc(100% - 9rem);
+          opacity: 0;
+          position: fixed;
+          transform: translateX(100%);
+          background-color: #202020;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          overflow-y: auto;
+      
+          &.show {
+            opacity: 1;
+            transform: translateX(0);
+            animation: slideInFromRight 1s ease;
+
+            @keyframes slideInFromRight {
+              0% {
+                transform: translateX(100%);
+              }
+              100% {
+                transform: translateX(0);
+              }
+            }
+          }
+
+          &.hide {
+            opacity: 0;
+            transform: translateX(100%);
+            animation: slideOutToRight 1s ease;
+      
+            @keyframes slideOutToRight {
+              0% {
+                transform: translateX(0);
+                opacity: 1;
+              }
+              100% {
+                transform: translateX(100%);
+                opacity: 0;
+              }
+            }
+          }
+
+          .main-navbar-list {
+            gap: 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            
+            li {
+
+              .navbar-link {
+                color: white;
+                font-size: 1.5rem;
+                font-weight: 400;
+                letter-spacing: 0.1rem;
+                text-transform: uppercase;
+                position: relative;
+                display: inline-block;
+                transition: color 0.5s ease;
+
+                &::after, &::before {
+                  color: white;
+                  transition: all 0.5s; 
+                }
+
+                &::after {
+                  left: 0;
+                  right: 0;
+                  top: -0.7rem;
+                  margin: auto;
+                  width: 0;
+                  height: 0.3rem;
+                  content: '';
+                  position: absolute;
+                  color: transparent;
+                  background: white;
+                }
+
+                &.active::after {
+                  left: 0;
+                  right: 0;
+                  top: -0.7rem;
+                  margin: auto;
+                  width: 100%;
+                  height: 0.3rem;
+                  content: '';
+                  position: absolute;
+                  color: transparent;
+                  background: #ff4500;
+                }
+
+                &:hover::after {
+                  width: 100%;
+                }
+              }
+            }
+          }
+    }
+}

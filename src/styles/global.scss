@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// Global Reset and Default Styles.
+
+// Reset margins, paddings, and box-sizing for all elements.
+// This ensures consistent sizing and layout across different browsers.
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // Set the default font family for all elements to 'Roboto'.
+    // If 'Poppins' is not available, fallback to the default sans-serif font.
+    font-family: 'Poppins', sans-serif;
+}
+
+// Set the base font size for the document to 62.5%.
+// This allows easy conversion from 'rem' units to pixels (1rem = 10px).
+// So, 1.6rem will be equal to 16px (1.6 * 10px = 16px).
+html {
+    font-size: 62.5%;
+    // Hide horizontal overflow on the 'html' element.
+    // This prevents horizontal scrolling and ensures a cleaner layout.
+    overflow-x: hidden;
+}
+
+// Hide horizontal overflow on the 'body' element.
+// This ensures that the page's content doesn't overflow horizontally.
+body {
+    overflow-x: hidden;
+}
+
+// Reset box model and remove default margins / paddings.
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strong, sub, sup, b, i, u, strike, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+article, section, header {
+    margin: 0;
+    padding: 0;
+}
+
+  
+// Normalize list styles.
+ul, ol {
+    list-style: none;
+}
+  
+// Remove underlines from links.
+a {
+    text-decoration: none;
+}

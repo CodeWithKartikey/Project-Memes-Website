@@ -1,0 +1,143 @@
+// Contact Us Page styles.
+.contact-us-page {
+    gap: 5rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 14rem 5rem 5rem 5rem;
+
+    .laugh-with-modi-content {
+        gap: 2.5rem;
+        width: 55%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+        section {
+            gap: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-evenly;
+    
+            header {
+    
+                h1 {
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                    color: #ff4500;
+                    word-spacing: normal;
+                    letter-spacing: 0.2rem;
+                    text-transform: uppercase;
+                }
+    
+                h2 {
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: #141414;
+                    word-spacing: normal;
+                    letter-spacing: 0.1rem;
+                    text-transform: uppercase;
+                }
+            }
+    
+            p {
+                color: #202020;
+                font-weight: 400;
+                font-size: 1.4rem;
+                word-spacing: normal;
+                letter-spacing: normal;
+                text-align: justify;
+                text-transform: capitalize;
+            }
+        }
+    }
+  
+    form {
+        gap: 0.5rem;
+        width: 35%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 5rem;
+        border-radius: 4px;
+        border: 3px solid #141414;
+
+        .column {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-evenly;
+        
+            label {
+                color: #141414;
+                font-weight: 400;
+                font-size: 1.4rem;
+                letter-spacing: normal;
+                text-transform: capitalize; 
+            }
+        
+            input {
+                width: 100%;
+                height: 4rem;
+                outline: none;
+                border-radius: none;
+                border: 1px solid #202020;
+                resize: none;
+                display: block;
+                font-weight: 400;
+                font-size: 1.3rem;
+                color: #202020;
+                margin: 1rem 0rem;
+                padding: 1rem 0rem 1rem 1rem; 
+            }
+
+            textarea {
+                width: 100%;
+                height: 14rem;
+                outline: none;
+                border-radius: none;
+                border: 1px solid #202020;
+                resize: none;
+                display: block;
+                font-weight: 400;
+                font-size: 1.3rem;
+                color: #202020;
+                margin: 1rem 0rem;
+                padding: 1rem 0rem 1rem 1rem; 
+            }
+        }
+
+        input[type="submit"] {
+            width: 30%;
+            height: auto;
+            font-weight: 500;
+            font-size: 1.5rem;
+            color: white;
+            background-color: #ff4500;
+            border: none;
+            cursor: pointer;
+            border-radius: none;
+            margin-top: 0.5rem;
+            padding: 1rem 0rem;
+            text-align: center;
+            letter-spacing: 0.1rem;
+            text-transform: capitalize;
+            transition: box-shadow 0.3s ease;
+      
+            &:hover {
+              box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+}
+  

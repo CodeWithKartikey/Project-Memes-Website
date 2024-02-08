@@ -1,0 +1,50 @@
+// Privacy Policy, Terms & Conditions, Disclaimer Page Styles.
+.privacy-policy-page {
+    gap: 2.5rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 14rem 10rem 5rem 10rem;
+
+    section {
+        gap: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+        header {
+
+            h1 {
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: #ff4500;
+                word-spacing: normal;
+                letter-spacing: 0.2rem;
+                text-transform: uppercase;
+            }
+
+            h2 {
+                font-size: 2rem;
+                font-weight: 700;
+                color: #141414;
+                word-spacing: normal;
+                letter-spacing: 0.1rem;
+                text-transform: uppercase;
+            }
+        }
+
+        p {
+            color: #202020;
+            font-weight: 400;
+            font-size: 1.4rem;
+            word-spacing: normal;
+            letter-spacing: normal;
+            text-align: justify;
+            text-transform: capitalize;
+        }
+    }
+}
